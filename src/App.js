@@ -24,4 +24,8 @@ function App() {
   );
 }
 
+axios.get('http://localhost:8000/characters').then(res=>{
+  console.log(res.data)
+})
+
 export default App;
